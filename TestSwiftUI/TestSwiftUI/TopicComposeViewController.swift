@@ -16,8 +16,10 @@ final class TopicComposeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .white
         label.text = "Hi"
         view.addSubview(label)
+        label.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             label.leftAnchor.constraint(equalTo: view.leftAnchor),
             label.rightAnchor.constraint(equalTo: view.rightAnchor),
